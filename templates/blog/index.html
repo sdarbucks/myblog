@@ -6,6 +6,7 @@
 </head>
 <body>
     <h2>안녕하세요~ 블로그에 오신 것을 환영합니다.</h2>
+    <a href="{% url 'blog:post_create' %}">글쓰기</a>
     {% if post_list %}
     <ul>
         {% for post in post_list %}
